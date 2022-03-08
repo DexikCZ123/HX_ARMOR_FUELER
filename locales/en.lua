@@ -1,5 +1,5 @@
 Locales['en'] = {
-    ['press'] = 'Press ~y~E~w~ for full armour',
+    ['press'] = '~INPUT_CONTEXT~ for full armour',
     ['armor_wearing'] = 'You wearing Vest',
     ['armor_max'] = 'You already have armour!',
 }
