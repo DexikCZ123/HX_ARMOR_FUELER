@@ -41,6 +41,7 @@ for k,v in ipairs(Config.Zone) do
     local distance = #(playerCoords - v)
     if PlayerData.job ~= nil and PlayerData.job.name == Config.job or PlayerData.job ~= nil and PlayerData.job.name == Config.job2 then 
 if distance <= 3 then
+    sleep = 0					
     ESX.ShowFloatingHelpNotification(_U('press'),vector3(v))
     if distance <= 1.5 and  IsControlPressed(0, 38) then
       
