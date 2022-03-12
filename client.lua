@@ -31,7 +31,7 @@ Citizen.CreateThread(function()
 
 local player = PlayerPedId()
 local playerCoords = GetEntityCoords(player)
-
+local sleep = 500
 
 
 local armor = GetPedArmour(player)
@@ -75,6 +75,7 @@ if distance <= 3 then
    end
 end
  end
+Wait(sleep)			
 end
 end)
 
