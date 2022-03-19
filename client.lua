@@ -26,6 +26,7 @@ end)
 
 
 Citizen.CreateThread(function()
+	while true do
 
 local player = PlayerPedId()
 local playerCoords = GetEntityCoords(player)
@@ -73,9 +74,10 @@ if distance <= 3 then
        end
       end
      end
-Wait(sleep)			
-   end
+    end		
   end
+Wait(sleep)	
+ end
 end)
 
 
