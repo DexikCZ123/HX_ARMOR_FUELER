@@ -26,12 +26,10 @@ end)
 
 
 Citizen.CreateThread(function()
-	while true do
-		Wait(10)
 
 local player = PlayerPedId()
 local playerCoords = GetEntityCoords(player)
-local sleep = 500
+local sleep = 1500
 
 
 local armor = GetPedArmour(player)
@@ -40,8 +38,9 @@ local armor = GetPedArmour(player)
 for k,v in ipairs(Config.Zone) do
     local distance = #(playerCoords - v)
     if PlayerData.job ~= nil and PlayerData.job.name == Config.job or PlayerData.job ~= nil and PlayerData.job.name == Config.job2 then 
-if distance <= 3 then
-    sleep = 0					
+if distance <= 5 then 
+sleep = 0
+if distance <= 3 then				
     ESX.ShowFloatingHelpNotification(_U('press'),vector3(v))
     if distance <= 1.5 and  IsControlPressed(0, 38) then
       
@@ -69,15 +68,14 @@ if distance <= 3 then
             else
                SetPedArmour(player, Config.ArmorAmount)
             end
-            end
+           end
         end)
-
-    end
-   end
-end
- end
+       end
+      end
+     end
 Wait(sleep)			
-end
+   end
+  end
 end)
 
 
