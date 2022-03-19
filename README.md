@@ -1,4 +1,4 @@
-# HX_ARMOR_FUELER
+# hx_armour
 
 FIVEM ARMOUR_FUELER
 
